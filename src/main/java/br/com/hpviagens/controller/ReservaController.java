@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,6 +18,7 @@ import br.com.hpviagens.DTO.ReservaDTO;
 import br.com.hpviagens.entidades.Reserva;
 import br.com.hpviagens.services.ReservaService;
 
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("/reserva")
 public class ReservaController {
@@ -24,7 +26,7 @@ public class ReservaController {
 	@Autowired
 	private ReservaService rService;
 	
-	@GetMapping("/reservas")
+	@GetMapping
 	public List<Reserva> reservaAll(){
 		
 		return rService.reservaAll();
