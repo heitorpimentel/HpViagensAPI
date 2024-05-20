@@ -9,10 +9,10 @@ public class CorsConfig implements WebMvcConfigurer {
 
     @Override
     public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/cliente/**") // Define o caminho da API que será acessado
+        registry.addMapping("/cliente/**"); // Define o caminho da API que será acessado
         registry.addMapping("/viagem/**");
         registry.addMapping("/pagamento/**");
-        registry.addMapping("/reserva/**");
+        registry.addMapping("/reserva/**")
         .allowedOrigins("https://hpviagens.vercel.app")
         .allowedMethods("GET", "POST", "PUT", "DELETE");
     }
