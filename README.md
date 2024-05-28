@@ -7,7 +7,6 @@
 - MySQL (Banco de dados relacional)
 
 # Instruções para máquina local
-link para execução do projeto após inicialização do servidor local: [Clique aqui](http://localhost:8080/swagger-ui/index.html) <br>
 Para que o projeto funcione de maneira correta é necessário que seja cadastrado um cliente, uma viagem e um pagamento de maneira individual para que você consiga criar uma reserva.
 - Crie um cliente
 - Crie uma viagem
